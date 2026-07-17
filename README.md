@@ -231,6 +231,7 @@ See the [documentation on Initializer's logging properties](readme/rtprops.md#lo
 
 ## Releases notes
 #### version 2.13.0
+* Fix order types domain to apply the parent for order types with concrete Java classes (e.g. org.openmrs.DrugOrder)
 
 #### version 2.12.0
 * Fix conceptsets domain to prevent incorrect unretiring of associated concept
