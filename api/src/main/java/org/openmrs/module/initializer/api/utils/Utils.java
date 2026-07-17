@@ -493,13 +493,8 @@ public class Utils {
 		return stringList;
 	}
 	
-	public static OrderType getParentOrderType(OrderService orderService, String javaClassName, String id) {
-		OrderType parentOrdertype = null;
-		if (javaClassName.equals("org.openmrs.Order")) {
-			parentOrdertype = fetchOrderType(orderService, id);
-		}
-		// TODO verify if Context.getOrderService() is enough to handle more specific java class names (...like org.openmrs.DrugOrder)
-		return parentOrdertype;
+	public static OrderType getParentOrderType(OrderService orderService, String id) {
+		return fetchOrderType(orderService, id);
 	}
 	
 	/**

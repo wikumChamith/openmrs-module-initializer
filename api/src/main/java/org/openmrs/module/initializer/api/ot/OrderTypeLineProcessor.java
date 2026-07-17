@@ -44,7 +44,7 @@ public class OrderTypeLineProcessor extends BaseLineProcessor<OrderType> {
 		
 		String parentIdentifier = line.getString(PARENT, "");
 		if (!StringUtils.isEmpty(parentIdentifier)) {
-			orderType.setParent(Utils.getParentOrderType(orderService, javaClassName, parentIdentifier));
+			orderType.setParent(Utils.getParentOrderType(orderService, parentIdentifier));
 		}
 		
 		String conceptClassesStr = line.getString(HEADER_CONCEPT_CLASSES, "");

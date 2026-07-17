@@ -4,4 +4,4 @@ Uuid,Void/Retire,Name,Description,Java class name,Parent,Concept Classes,_order:
 8be5f714-ee92-4d09-939e-2d1897bb2f95,,New Order Type Name,For testing renaming an order type.,org.openmrs.Order,,,
 96f94b64-6c9e-489d-b258-633878b9af69,TRUE,,,org.openmrs.Order,,,
 ,,Order Type Without UUID,For testing loading order types by name.,org.openmrs.Order,,,
-6721493b-ec7c-4e3f-980a-5be3a09585ce,,Sub-Drug Order Type,For testing an order type for drug orders..,org.openmrs.DrugOrder,,,
+6721493b-ec7c-4e3f-980a-5be3a09585ce,,Sub-Drug Order Type,For testing an order type for drug orders..,org.openmrs.DrugOrder,01727040-a587-484d-b66a-f0afbae6c281,,

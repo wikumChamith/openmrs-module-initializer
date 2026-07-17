@@ -122,6 +122,8 @@ public class OrderTypesLoaderIntegrationTest extends DomainBaseModuleContextSens
 			Assert.assertNotNull(ot);
 			Assert.assertEquals("org.openmrs.DrugOrder", ot.getJavaClassName());
 			Assert.assertEquals(DrugOrder.class, ot.getJavaClass());
+			// The parent must be applied even when the Java class name is a concrete subtype of Order
+			Assert.assertEquals("01727040-a587-484d-b66a-f0afbae6c281", ot.getParent().getUuid());
 		}
 	}
 }
